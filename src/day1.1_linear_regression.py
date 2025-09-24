@@ -35,5 +35,7 @@ r2 = r2_score(y_test, y_prediction)
 print(f"Test MSE: {mean_squared_error:.2f}")
 print(f"Test R2: {r2:.2f}")
 
-joblib.dump
+joblib.dump(model, "models/california_linear_regression.joblib")
+joblib.dump(scaler, "models/scaler_housing.joblib")
+print("Saved")
 
